@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Simple Nav</title>
+    
+    
+    
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <div class="mainContainer" ng-app="simpleNav">
+<nav ng-class="{{active}}">
+<ul>
+  <li><button class="lions" ng-click="active='lions'">Lions</button></li>
+  <li><button href="#" class="tigers" ng-click="active='tigers'">Tigers</button></li>
+  <li><button href="#" class="bears" ng-click="active='bears'">Bears</button></li>
+</ul>
+  
+  </nav>
+  
+  	<p ng-hide="active">Click an animal group</p>
+	<p ng-show="active">You chose <strong>{{active}}</strong>!</p>
+
+
+</div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>

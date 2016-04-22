@@ -1,0 +1,14 @@
+body {
+  text-align: center;
+}
+.mainContainer {
+  background: #eaeaea;
+  width: 75vw;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 0px;
+  display: inline;
+}
