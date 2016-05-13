@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>A Pen by  Josh Barrera</title>
+    
+    
+    
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <div class="MainContainer"
+     ng-app="showList"
+     ng-controller="show.list">
+  <h1 class="title">{{title}}</h1>
+  <input type="text" ng-model="inputFilter"/>
+  <ul>
+    <li ng-repeat="boom in list | filter: inputFilter | orderBy: alpha">
+    Venue:  {{boom.venue}} ...
+    Artist: {{boom.artist}} ...
+    Style: {{boom.music}} ...
+    Date: {{boom.date}} ...
+    Price: {{boom.price}}</li>
+  </ul>
+
+
+</div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
